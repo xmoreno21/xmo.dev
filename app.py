@@ -20,6 +20,10 @@ def index():
 def levelr():
     return render_template('levelr.html')
 
+@app.route('/lockr', methods = ['GET'])
+def lockr():
+    return render_template('lockr.html')
+
 @app.route('/xmopfp.jpg', methods = ['GET'])
 def pfp():
     return send_file('static/xmopfp.jpg', mimetype='image/jpg')
@@ -27,3 +31,7 @@ def pfp():
 @app.route('/levelrpfp.png', methods = ['GET'])
 def levelrpfp():
     return send_file('static/levelrpfp.png', mimetype='image/png')
+
+@app.route('/lockrpfp.png', methods = ['GET'])
+def lockrpfp():
+    return send_file('static/lockrpfp.png', mimetype='image/png')
