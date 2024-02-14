@@ -14,7 +14,7 @@ app = Flask(__name__)
 # /xmopfp.jpg - profile picture
 @app.route('/', methods = ['GET'])
 def index():
-    return render_template('index.html')
+    return render_template('landing.html')
 
 @app.route('/levelr', methods = ['GET'])
 def levelr():
@@ -24,6 +24,6 @@ def levelr():
 def pfp():
     return send_file('static/xmopfp.jpg', mimetype='image/jpg')
 
-@app.route('/levelrpfp.jpg', methods = ['GET'])
+@app.route('/levelrpfp.png', methods = ['GET'])
 def levelrpfp():
-    return send_file('static/levelrpfp.jpg', mimetype='image/jpg')
+    return send_file('static/levelrpfp.png', mimetype='image/png')
