@@ -11,12 +11,19 @@ app = Flask(__name__)
 # /lockr - lockr landing page with link to docs and status pages
 # /lockr/docs - lockr documentation
 # /lockr/status - lockr status page
-# /soundsworld - sw invite redirect
-
+# /xmopfp.jpg - profile picture
 @app.route('/', methods = ['GET'])
 def index():
     return render_template('index.html')
 
-@app.route('/pfp.jpg', methods = ['GET'])
+@app.route('/levelr', methods = ['GET'])
+def levelr():
+    return render_template('levelr.html')
+
+@app.route('/xmopfp.jpg', methods = ['GET'])
 def pfp():
-    return send_file('static/pfp.jpg', mimetype='image/jpg')
+    return send_file('static/xmopfp.jpg', mimetype='image/jpg')
+
+@app.route('/levelrpfp.jpg', methods = ['GET'])
+def levelrpfp():
+    return send_file('static/levelrpfp.jpg', mimetype='image/jpg')
