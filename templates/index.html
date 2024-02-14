@@ -3,11 +3,20 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="Xmo is really cool!">
 <meta name="theme-color" content="#8DD258">
+<meta property="og:image" content="https://xmo.dev/pfp.jpg">
+<meta name="theme-color" content="#A564EE">
 <html>
 <head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>xmo.dev</title>
 <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
 <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+
 <style>
 body {
     font-family: Inter, sans-serif;
@@ -16,12 +25,71 @@ body {
     color: #dcddde;
     font-size: 15px;
     }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #36393e;
+    }
+li {
+    float: left;
+    }
+li a {
+    display: block;
+    color: #dcddde;
+    text-align: center;
+    text-decoration: none;
+    }
+.btn-primary {
+    background-color: #FF4136;
+    background-image: linear-gradient(to bottom, #FF4136, #FF0000);
+    border-color: #FF4136;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #FF0000;
+    background-image: linear-gradient(to bottom, #FF0000, #FF4136);
+    border-color: #FF0000;
+}
+.btn-secondary {
+    background-color: #0074D9;
+    background-image: linear-gradient(to bottom, #0074D9, #00A0FF);
+    border-color: #0074D9;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #00A0FF;
+    background-image: linear-gradient(to bottom, #00A0FF, #0074D9);
+    border-color: #00A0FF;
+}
+p.spacer {
+  margin-bottom: 40px;
+}
+</style>
 </style>
 </head>
 <body>
 
+<ul>
+    <li><a href="/"><button style="margin-right: 10px; margin-left: 0px; padding: 10px;" class="btn-secondary">Home</button></a></li>
+    <li><a href="/members"><button style="margin-right: 10px; margin-left: 0px; padding: 10px;" class="btn-secondary">Levelr</button></a></li>
+</ul>
+
 <h1>xmo.dev</h1>
 <p>hello!</p>
 
-</body>
 </html>
