@@ -19,4 +19,4 @@ def index():
 
 @app.route('/pfp.jpg', methods = ['GET'])
 def pfp():
-    return send_file('pfp.jpg')
+    return send_file('static/pfp.jpg', mimetype='image/jpg')
